@@ -1,0 +1,21 @@
+# Spring properties
+spring:
+  application:
+     name: whs-service  # Service registers under this name
+  freemarker:
+    enabled: false           # Ignore Eureka dashboard FreeMarker templates
+
+# Discovery Server Access
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.40.170.93:8761/eureka/
+
+# HTTP Server
+server:
+  port: 2222   # HTTP (Tomcat) port
+
+
+
